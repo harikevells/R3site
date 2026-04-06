@@ -1,0 +1,264 @@
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  /* Offset for fixed navbar */
+}
+
+.about-hero {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 clamp(20px, 5vw, 80px); */
+  gap: 40px;
+  padding-left: 40px;
+  margin-top: 10%;
+}
+
+.about-hero-content {
+  flex: 2.1;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-main-heading {
+  font-family: 'Google Sans';
+  /* Matching the screenshot's cleaner rounded look */
+  font-weight: 700;
+  color: #000000;
+  font-size: clamp(36px, 6.5vw, 108px);
+  line-height: 1.1;
+  margin-bottom: 30px;
+  text-transform: none !important;
+  letter-spacing: -0.02em;
+  opacity: 0;
+}
+
+.about-page.in-view .about-main-heading {
+  animation: fadeInUp 1s ease-out both;
+  animation-delay: 0.2s;
+}
+
+.text-red {
+  color: #E31E24;
+  position: relative;
+  display: inline-block;
+}
+
+/* Subtle box/selection style if needed, but screenshot shows it as part of design tool UI likely. 
+   I'll stick to clean text. */
+
+.about-description {
+  font-family: 'DM Sans', sans-serif;
+  color: #64748b;
+  font-size: clamp(14px, 1.2vw, 17px);
+  line-height: 1.8;
+  max-width: 700px;
+  margin-bottom: 40px;
+  opacity: 0;
+}
+
+.about-page.in-view .about-description {
+  animation: fadeInUp 1s ease-out both;
+  animation-delay: 0.4s;
+}
+
+/* Testimonial Cards */
+.testimonial-container {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  height: 100px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  transition: transform 0.3s ease;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.about-page.in-view .testimonial-card {
+  animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.about-page.in-view .card-1 { animation-delay: 0.6s; }
+.about-page.in-view .card-2 { animation-delay: 0.7s; }
+
+.card-1 {
+  left: 0;
+  z-index: 2;
+}
+
+.card-2 {
+  left: 180px;
+  /* Overlapping */
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+.testimonial-stars {
+  display: flex;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+.about-hero-image-box {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+}
+
+.about-page.in-view .about-hero-image-box {
+  animation: scaleIn 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-delay: 0.2s;
+}
+
+.about-hero-img {
+  /* width: 100%;
+  max-width: clamp(300px, 40vw, 650px);
+  height: auto;
+  object-fit: contain; */
+  /* Matching the screenshot position - slightly tilted or angled lookup */
+  transform: perspective(1000px) rotateY(-5deg);
+  margin-top: -73%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-hero {
+    flex-direction: row-reverse;
+    text-align: left;
+    padding: 60px 20px;
+    padding-right: 0px !important;
+  }
+
+  .about-hero-image-box {
+    justify-content: center;
+    order: -1;
+    margin-bottom: 40px;
+  }
+
+  .about-description {
+
+    font-size: 16px;
+  }
+
+  .about-main-heading {
+
+    font-size: 34px;
+  }
+
+  .about-hero {
+
+    margin-top: 0% !important;
+  }
+
+  .about-hero-img {
+    transform: perspective(1000px) rotateY(-5deg);
+    margin-top: -46%;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-container {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .about-description {
+
+    font-size: 16px;
+  }
+
+  .about-main-heading {
+
+    font-size: 30px;
+  }
+
+  .about-hero {
+    flex-direction: column;
+    text-align: left;
+    padding: 60px 20px;
+    /* padding-right: 0px !important; */
+  }
+
+  .testimonial-card {
+    position: static;
+  }
+}

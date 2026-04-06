@@ -1,0 +1,355 @@
+.products-redesign-section {
+  background-color: #ffffff;
+  padding: 70px 40px;
+  padding-top: 0px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.products-main-title {
+  font-family: 'Google Sans';
+  font-size: 56px;
+  font-weight: 900;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+}
+
+.products-redesign-section.in-view .products-main-title {
+  animation: fadeInUp 0.8s ease-out both;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawPath {
+  from {
+    stroke-dashoffset: 200;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.product-text-block {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-block {
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+.left-block>* {
+  opacity: 0;
+}
+
+.products-redesign-section.in-view .left-block>* {
+  animation: slideInLeft 1s ease-out both;
+}
+
+.products-redesign-section.in-view .left-block .product-sub-title {
+  animation-delay: 0.4s;
+}
+
+.products-redesign-section.in-view .left-block .product-body-text:nth-of-type(1) {
+  animation-delay: 0.6s;
+}
+
+.products-redesign-section.in-view .left-block .product-body-text:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+
+.right-block {
+  align-self: flex-end;
+  margin-top: 420px;
+}
+
+.right-block>* {
+  opacity: 0;
+}
+
+.products-redesign-section.in-view .right-block>* {
+  animation: slideInRight 1s ease-out both;
+}
+
+.products-redesign-section.in-view .right-block .product-sub-title {
+  animation-delay: 0.5s;
+}
+
+.products-redesign-section.in-view .right-block .product-body-text:nth-of-type(1) {
+  animation-delay: 0.7s;
+}
+
+.products-redesign-section.in-view .right-block .product-body-text:nth-of-type(2) {
+  animation-delay: 0.9s;
+}
+
+.product-sub-title {
+  color: #E53935;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Google Sans';
+  margin-bottom: 15px;
+}
+
+.product-body-text {
+  color: #333333;
+  font-size: 16px;
+  font-family: 'Google Sans';
+  line-height: 1.7;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-text-block {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.product-text-block:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.05));
+}
+
+.product-image-block {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+
+.center-glove-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  transition: transform 0.6s ease;
+  margin-left: -25%;
+  position: relative;
+}
+
+.products-redesign-section.in-view .center-glove-image {
+  animation: scaleIn 1.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-delay: 0.3s;
+}
+
+.product-image-block:hover .center-glove-image {
+  transform: scale(1.05) translateY(-10px);
+}
+
+/* SVG Pointers */
+.products-pointer-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.arrow-line-path {
+  stroke: #E53935;
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  fill: none;
+}
+
+.products-redesign-section.in-view .arrow-line-path {
+  animation: drawPath 2.5s ease-out forwards;
+  animation-delay: 1.4s;
+}
+
+@keyframes drawPath {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.arrow-circle-node {
+  fill: #E53935;
+}
+
+.product-icon-container {
+  width: 100%;
+  height: 100%;
+  background-color: #E53935;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.products-redesign-section.in-view .product-icon-container {
+  animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation-delay: 2.4s;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.product-icon-container:hover {
+  transform: scale(1.1);
+  background-color: #d32f2f;
+}
+
+.product-arrow-icon {
+  font-size: 16px;
+  /* Reduced for safe inner containment */
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
+.left-arrow {
+  /* Points from text toward glove (down-right) */
+  transform: rotate(45deg);
+}
+
+.right-arrow {
+  /* Points from glove toward text (down-right) */
+  transform: rotate(193deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 1023px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .products-redesign-section {
+    padding: 30px 16px;
+  }
+
+  .products-main-title {
+    font-size: 32px;
+  }
+
+  .product-text-block {
+    text-align: center;
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .right-block {
+    margin-top: 0;
+  }
+
+  .products-pointer-svg {
+    display: none;
+  }
+
+  .center-glove-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Ensuring stack order: Nitrile -> Image -> Latex */
+  .left-block {
+    order: 1;
+  }
+
+
+  .product-body-text {
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .product-image-block {
+    order: 2;
+  }
+
+  .right-block {
+    order: 3;
+  }
+}

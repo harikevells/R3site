@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&display=swap');
+
+.markets-section {
+  background-image: url(/src/assets/weservicesbg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: clamp(700px, 60vh, 800px); /* Fluid height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+}
+
+.markets-border-wrapper {
+  /* border-left: 4px solid #1a3a8f; */
+  padding: clamp(60px, 8vh, 120px) clamp(20px, 5vw, 60px); /* Fluid padding */
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.markets-container {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  max-width: 1400px; /* Increased for ultra-wide */
+  margin: 0 auto;
+}
+
+.markets-text-content {
+  margin-bottom: clamp(30px, 4vw, 50px);
+}
+
+.markets-subheading {
+  font-family: 'Google Sans';
+  font-weight: 700;
+  font-size: clamp(14px, 5.5vw, 27px); /* Fluid font size */
+  color: #E31E24;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.markets-section.in-view .markets-subheading {
+  animation: fadeInUp 0.8s ease-out both;
+  animation-delay: 0.2s;
+}
+
+.markets-main-heading {
+  font-family: 'Google Sans';
+  font-weight: 900;
+  font-size: clamp(20px, 4vw, 42px); /* Fluid font size */
+  color: #0f172a;
+  text-transform: uppercase;
+  margin: 0 auto;
+  line-height: 1.1;
+  max-width: 1000px;
+  opacity: 0;
+}
+
+.markets-section.in-view .markets-main-heading {
+  animation: fadeInUp 0.8s ease-out both;
+  animation-delay: 0.4s;
+}
+
+.markets-button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center buttons horizontally */
+  gap: clamp(12px, 2vw, 20px);
+}
+
+.markets-buttons-row {
+  display: flex;
+  gap: clamp(10px, 1.5vw, 20px);
+  justify-content: center;
+}
+
+.pill-button {
+  border-radius: 50px;
+  padding: clamp(10px, 1.2vw, 16px) clamp(24px, 2.5vw, 44px); /* Fluid padding */
+  font-family: 'Google Sans';
+  font-weight: 700;
+  font-size: clamp(13px, 1.25vw, 18px); /* Fluid font size */
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  display: inline-block;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0;
+}
+
+.markets-section.in-view .pill-button {
+  animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.markets-section.in-view .markets-buttons-row:nth-child(1) .pill-button:nth-child(1) { animation-delay: 0.6s; }
+.markets-section.in-view .markets-buttons-row:nth-child(1) .pill-button:nth-child(2) { animation-delay: 0.7s; }
+.markets-section.in-view .markets-buttons-row:nth-child(1) .pill-button:nth-child(3) { animation-delay: 0.8s; }
+
+.markets-section.in-view .markets-buttons-row:nth-child(2) .pill-button:nth-child(1) { animation-delay: 0.9s; }
+.markets-section.in-view .markets-buttons-row:nth-child(2) .pill-button:nth-child(2) { animation-delay: 1.0s; }
+
+.pill-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .markets-main-heading {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .markets-buttons-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .markets-subheading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: clamp(23px, 1.5vw, 20px);
+  }
+  .markets-section {
+min-height: 560px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .pill-button {
+    width: 90%; /* Center with some margin */
+    text-align: center;
+  }
+  .markets-buttons-row {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .markets-container {
+    max-width: 1500px;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

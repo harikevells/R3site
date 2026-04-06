@@ -1,0 +1,128 @@
+.medical-grade-wrapper {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.medical-grade-container {
+    width: 100%;
+    max-width: 100%; /* Increased from 600px */
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Header Sections */
+.medical-grade-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mg-title-line {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.mg-vs-divider {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+/* Table Responsive Wrapper */
+.medical-grade-table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Table Design */
+.medical-grade-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px; /* Increased min-width to support larger font sizes */
+}
+
+/* Table Header */
+.medical-grade-table thead tr {
+    background-color: #0d1b3e;
+    height: 60px;
+}
+
+.medical-grade-table th {
+    color: #ffffff;
+    font-size: 18px; /* Increased from 14px */
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+
+.medical-grade-table th.mg-th-left {
+    text-align: left;
+    padding-left: 30px;
+}
+
+/* Table Body Rows */
+.medical-grade-table tbody tr {
+    height: 85px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.medical-grade-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.medical-grade-table tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* Column 1 - Feature */
+.mg-feature-col {
+    color: #1a2744;
+    font-weight: 700;
+    font-size: 16px; /* Increased from 13.5px */
+    padding-left: 30px;
+    width: 30%;
+}
+
+/* Column 2 & 3 - Data */
+.mg-data-col {
+    color: #333333;
+    font-size: 16px; /* Increased from 13.5px */
+    text-align: center;
+    padding: 15px;
+    width: 35%;
+    line-height: 1.5;
+}
+
+/* Scroll Reveal Animations */
+.mg-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.mg-reveal.reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Handling */
+@media (max-width: 768px) {
+    .medical-grade-container {
+        padding: 0 20px;
+    }
+    
+    .mg-title-line, .mg-vs-divider {
+        font-size: 24px;
+    }
+}

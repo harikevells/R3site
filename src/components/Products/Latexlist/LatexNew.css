@@ -1,0 +1,289 @@
+/* LatexNew.css */
+
+.latex-section {
+    padding: clamp(60px, 8vw, 40px) 20px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.latex-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.latex-product-item {
+    width: 100%;
+}
+
+/* Centered Header Styles */
+.latex-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+    transition: all 1s ease-out;
+}
+
+.latex-eyebrow {
+    color: #FF0000;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: clamp(14px, 2vw, 38px);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.latex-title {
+    font-size: clamp(32px, 5.5vw, 56px);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.latex-subtitle {
+    font-size: clamp(16px, 2.8vw, 24px);
+    color: #4B5563;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Content Body Flexbox Layout */
+.latex-main-row {
+    display: flex;
+    align-items: stretch;
+    /* Stretch to keep image and list aligned */
+    justify-content: space-between;
+    gap: clamp(40px, 6vw, 100px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 60px;
+}
+
+/* Section 1: Image Right, Text Left (default flex-direction) */
+/* Section 2: Image Left, Text Right (row-reverse) */
+.latex-main-row.alt {
+    flex-direction: row-reverse;
+}
+
+/* Animation Base Classes (Moved from here to end of file) */
+
+/* Text Content Area */
+.latex-text-content {
+    flex: 1.5;
+    max-width: 750px;
+    text-align: left;
+    /* Keep internal lists left-aligned as per reference */
+}
+
+/* Red Badges & Labels */
+.latex-badge-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.ments{
+
+    display: grid;
+    justify-content: end;
+}
+.ments1{
+
+    display: flex;
+    justify-content: end;
+}
+.format2{
+    justify-content: end;
+    text-align: end;
+}
+.latex-line {
+    height: 1.5px;
+    background-color: #FF0000;
+    flex: 0 0 60px;
+}
+
+.latex-badge {
+    background-color: #FA06012E;
+    color: #FF0500;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: clamp(11px, 1.2vw, 13px);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+.latex-subheading {
+    font-size: clamp(20px, 3vw, 26px);
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 25px;
+}
+
+/* List Styles */
+.latex-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 45px;
+}
+
+.latex-list-item {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 15px;
+    font-size: clamp(15px, 1.8vw, 20px);
+    line-height: 1.6;
+    color: #374151;
+}
+
+.latex-list-item::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #FF0000;
+    font-size: 13px;
+}
+
+.latex-apps-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px 30px;
+}
+
+/* Image Area */
+.latex-image-box {
+    flex: 0.8;
+    max-width: 500px;
+    border-radius: 24px;
+    overflow: hidden;
+    /* Removed sticky to keep it aligned with Key Features precisely */
+    display: flex;
+}
+
+.latex-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 24px;
+    /* border: 4px solid #FF0000; Added red border as seen in designs */
+    border-top-left-radius: 80px;
+    /* Specific corner styling for default (right) side */
+}
+
+/* Mirrored corner styling for section with image on the left */
+.latex-main-row.alt .latex-img {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 80px;
+}
+
+/* Applications Area */
+.latex-apps-section {
+    width: 100%;
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 40px;
+}
+
+/* Main Red Divider - Full Screen Width */
+.latex-divider-main {
+    height: 10px;
+    background-color: #FF0000;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Responsiveness (Mobile - Desktop) */
+@media (max-width: 1024px) {
+    .latex-main-row {
+        flex-direction: column-reverse !important;
+        text-align: center;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .latex-text-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .latex-badge-wrapper {
+        justify-content: center;
+    }
+
+    .latex-list-item {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .latex-list-item::before {
+        position: relative;
+        display: inline-block;
+        margin-right: 12px;
+    }
+
+    .latex-apps-list {
+        grid-template-columns: 1fr;
+    }
+
+    .latex-image-box {
+        max-width: 500px;
+        position: static;
+    }
+}
+
+/* Ultrawide 2500px optimization */
+@media (min-width: 2000px) {
+    .latex-container {
+        max-width: 1800px;
+    }
+}
+
+/* Animation & Scroll Reveal States */
+.reveal-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.in-view {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+.in-view-top {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+
+@media (max-width: 600px) {
+
+       .latex-list-item {
+        padding-left: 30px;
+        text-align: justify;
+    }
+}

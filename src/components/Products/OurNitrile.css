@@ -1,0 +1,210 @@
+.our-nitrile-wrapper {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+.our-nitrile-container {
+    width: 100%;
+    /* max-width: 1300px; */
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px; /* Gap between sections */
+}
+
+.our-nitrile-section {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.our-nitrile-section.section-2 {
+    grid-template-columns: 1fr 1.2fr;
+}
+
+/* Image Styling */
+.our-nitrile-image-container {
+    width: 100%;
+    position: relative;
+}
+
+.our-nitrile-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* The SVG contains the border and radius, but if using standard images: */
+    /* border: 4px solid #e00000;
+    border-radius: 12px; */
+}
+
+/* Content Column Styling */
+.our-nitrile-content-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-nitrile-content-col.align-right {
+    align-items: flex-start; /* Still aligned left but labels change */
+}
+
+/* Red Label Styling */
+.our-nitrile-label-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.our-nitrile-red-label {
+    color: #e00000;
+    font-size: 12px; /* Increased from 11px */
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 3px;
+    text-transform: uppercase;
+    background-color: #FA06012E;
+}
+.mands{
+
+    text-align: end;
+    width: 100%;
+}
+.mands li {
+
+    display: flex;
+    justify-content: end;
+}
+.our-nitrile-red-line {
+    width: 50px; /* Slightly longer */
+    height: 2px; /* Slightly thicker */
+    background-color: #e00000;
+}
+
+/* Heading Styling */
+.our-nitrile-main-heading {
+    color: #000000;
+    font-size: clamp(28px, 3.2vw, 36px); /* Increased from ~29px */
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 35px 0;
+}
+
+/* Bullet List Styling */
+.our-nitrile-bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.our-nitrile-bullet-list li {
+    display: flex;
+    align-items: flex-start;
+    color: #444444;
+    font-size: 17px; /* Increased from 14.5px */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.our-nitrile-bullet-list li::before {
+    content: "▪";
+    color: #e00000;
+    font-size: 20px; /* Increased */
+    margin-right: 14px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.our-nitrile-bullet-list.spacing-top {
+    margin-top: 20px;
+}
+
+/* Subheading Styling */
+.our-nitrile-subheading-bold {
+    color: #000000;
+    font-size: 19px; /* Increased from 15.5px */
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.our-nitrile-subheading-red {
+    color: #e00000;
+    font-size: 17px; /* Increased from 14.5px */
+    font-weight: 700;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.our-nitrile-subheading-bold.thin-margin {
+    margin-top: 5px;
+}
+
+/* Custom alignment for Section 2 right column labels */
+.label-right {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.line-before {
+    order: -1;
+}
+
+/* Responsive Styling */
+@media (max-width: 1100px) {
+    .our-nitrile-container {
+        padding: 0 40px;
+        gap: 80px;
+    }
+    
+    .our-nitrile-section, 
+    .our-nitrile-section.section-2 {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .our-nitrile-section.section-2 .our-nitrile-image-col {
+        order: 2; /* Reverse only for mobile if desired, or keep natural stacking */
+    }
+
+    .our-nitrile-main-heading {
+        font-size: 24px;
+    }
+
+    .label-right {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-nitrile-wrapper {
+        padding: 60px 0;
+    }
+    
+    .our-nitrile-container {
+        padding: 0 25px;
+        gap: 70px;
+    }
+}
+
+/* Scroll Reveal Animations */
+.our-nitrile-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.2s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.our-nitrile-reveal.reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Bi-directional reset is handled by the removal of reveal-active in the hook */

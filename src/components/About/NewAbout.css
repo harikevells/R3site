@@ -1,0 +1,79 @@
+.new-about-section {
+    padding: 40px 80px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.na-container {
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.na-card {
+    border: 1px solid #E5E7EB; /* Light gray border as in image */
+    border-radius: 16px;
+    padding: clamp(30px, 8vw, 60px);
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Animations based on visibility */
+.new-about-section.in-view .na-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-about-section.out-view .na-card {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.na-text {
+    font-family: inherit;
+    color: #4B5563; /* Medium gray text */
+    line-height: 1.7;
+    margin: 0;
+    font-size: clamp(16px, 2.5vw, 24px);
+    transition: all 0.8s ease-out;
+}
+
+.na-top-text {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.na-bottom-text {
+    font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .new-about-section {
+        padding: 60px 15px;
+    }
+    
+    .new-about-card {
+        padding: 30px 20px;
+        border-radius: 12px;
+    }
+    
+    .top-text {
+        margin-bottom: 20px;
+    }
+}
+
+/* Optional hover effect for premium feel */
+.na-card:hover {
+    border-color: #D1D5DB;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
