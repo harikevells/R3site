@@ -48,7 +48,7 @@ const OurNitrile = () => {
                     
                     <div className="our-nitrile-image-col">
                         <div className="our-nitrile-image-container">
-                            <img src={barrierImage} alt="Nitrile Barrier Protection" />
+                            <img className='sing' src={barrierImage} alt="Nitrile Barrier Protection " />
                         </div>
                     </div>
                 </div>

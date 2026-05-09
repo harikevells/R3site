@@ -10,6 +10,7 @@
     width: 100%;
     /* max-width: 1300px; */
     margin: 0 auto;
+    /* padding-right: 0px !important; */
     padding: 0 60px;
     display: flex;
     flex-direction: column;
@@ -29,14 +30,19 @@
 
 /* Image Styling */
 .our-nitrile-image-container {
-    width: 100%;
+    /* width: 100%; */
+    
     position: relative;
 }
+.our-nitrile-image-container,.sing{
 
+    margin-right: -128px !important;
+}
 .our-nitrile-image-container img {
     width: 100%;
     height: auto;
     display: block;
+    margin-left: -63px;
     object-fit: cover;
     /* The SVG contains the border and radius, but if using standard images: */
     /* border: 4px solid #e00000;

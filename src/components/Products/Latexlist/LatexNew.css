@@ -57,12 +57,13 @@
     align-items: stretch;
     /* Stretch to keep image and list aligned */
     justify-content: space-between;
-    gap: clamp(40px, 6vw, 100px);
+    gap: 20px;
     transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 60px;
+    flex-direction: row-reverse;
 }
 
-/* Section 1: Image Right, Text Left (default flex-direction) */
+/* Section 1: Image Left, Text Right (row-reverse) */
 /* Section 2: Image Left, Text Right (row-reverse) */
 .latex-main-row.alt {
     flex-direction: row-reverse;
@@ -72,8 +73,8 @@
 
 /* Text Content Area */
 .latex-text-content {
-    flex: 1.5;
-    max-width: 750px;
+    flex: 1;
+    max-width: 600px;
     text-align: left;
     /* Keep internal lists left-aligned as per reference */
 }
@@ -157,8 +158,8 @@
 
 /* Image Area */
 .latex-image-box {
-    flex: 0.8;
-    max-width: 500px;
+    flex: 1.5;
+    max-width: 800px;
     border-radius: 24px;
     overflow: hidden;
     /* Removed sticky to keep it aligned with Key Features precisely */
@@ -170,9 +171,9 @@
     height: 100%;
     display: block;
     object-fit: cover;
-    border-radius: 24px;
-    /* border: 4px solid #FF0000; Added red border as seen in designs */
+    border-radius: 22px;
     border-top-left-radius: 80px;
+       /* margin-top: -75px; */
     /* Specific corner styling for default (right) side */
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductNitrile.css';
 import nethands from '../../assets/latexhands.png';
-import netcenterbg from '../../assets/latexbg.png';
+import netcenterbg from '../../assets/Group 1000001899.png';
 import useScrollReveal from '../../hooks/useScrollReveal';
 import LatexNew from './Latexlist/LatexNew';
 import LatexPart from './Latexlist/LatexPart';

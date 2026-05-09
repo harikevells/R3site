@@ -7,6 +7,7 @@ import Nitrilecollection from './Nitrilecollection';
 import GloveDown from './GloveDown';
 import OurNitrile from './OurNitrile';
 import MedicalGrade from './MedicalGrade';
+import NewNitrile from './NewNitrile';
 
 const ProductNitrile = () => {
     const [ref, isVisible] = useScrollReveal();
@@ -26,6 +27,8 @@ const ProductNitrile = () => {
                     At R3 Global, we believe protective gloves are more than consumables — they are a frontline barrier safeguarding healthcare workers, laboratory professionals, and food-industry teams. Our nitrile gloves are engineered from high-grade nitrile butadiene rubber (NBR), delivering exceptional durability, chemical resistance, and comfort without the allergy risks associated with latex.
                 </p>
             </section>
+
+            <NewNitrile />
 
             {/* <section className="pn-features-section">
                 <div className="pn-features__container">

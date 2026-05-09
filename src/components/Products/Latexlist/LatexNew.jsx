@@ -1,7 +1,7 @@
 import React from 'react';
 import './LatexNew.css';
 import examGlove from '../../../assets/examinationglove.png';
-import surgicalGlove from '../../../assets/surgicalglove.png';
+import surgicalGlove from '../../../assets/boxmodel.webp';
 import useScrollReveal from '../../../hooks/useScrollReveal';
 
 const LatexNew = () => {
