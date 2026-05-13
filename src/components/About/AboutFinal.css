@@ -1,0 +1,302 @@
+.about-final {
+  padding: 80px 5%;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-final__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  align-items: stretch; /* Change to stretch to allow individual alignment */
+  gap: 40px;
+  position: relative;
+  min-height: 600px; /* Ensure enough height for the staggered layout */
+}
+
+/* Titles */
+.about-final__title {
+  color: #ff0000;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.about-final__description {
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Center Section */
+.about-final__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.about-final__target-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  z-index: 2;
+  margin-bottom: 60px; /* Space for arrows below */
+}
+
+.about-final__target-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+
+/* Arrows Animation */
+.about-final__arrows {
+  position: absolute;
+  bottom: -40px; /* Base starts below target */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 250px; /* Matches the tallest SVG height */
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 5;
+}
+
+.arrow {
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.arrow--left, .arrow--right {
+  width: 60px;
+  margin: 0 40px;
+  transform: translateY(100px);
+}
+
+.arrow--center {
+  width: 100px;
+  z-index: 6;
+  transform: translateY(120px);
+}
+
+/* Scroll Reveal States */
+.is-visible .arrow {
+  opacity: 1;
+  transform: translateY(0); /* Ends up touching/overlapping the image */
+}
+
+.is-visible .arrow--center {
+  transition-delay: 0.2s;
+}
+
+.is-visible .arrow--left {
+  transition-delay: 0.4s;
+}
+
+.is-visible .arrow--right {
+  transition-delay: 0.6s;
+}
+
+/* Decorative Paths */
+.about-final__decor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.decor-path {
+  position: absolute;
+  width: 50%;
+  /* height: auto; */
+}
+
+.decor-path--vision {
+  left: -25%;
+  top: 12%;
+}
+
+.decor-path--mission {
+     right: -11%;
+    bottom: 5%;
+    top: 18%;
+    rotate: -119deg;
+}
+
+.v-icon {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.v-icon--1 {
+  transform: rotate(157deg);
+    transform-origin: 54px 77px;
+}
+
+.v-icon--2 {
+      transform: rotate(85deg);
+    transform-origin: 123px 9px;
+}
+
+.is-visible .v-icon {
+  opacity: 1;
+}
+
+/* Content Animations */
+.about-final__content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.vision { 
+  align-self: flex-start;
+  padding-top: 40px;
+  transition-delay: 0.1s; 
+  margin-top: -71%;
+}
+
+.mission { 
+  align-self: flex-end;
+  padding-bottom: 40px;
+  transition-delay: 0.3s; 
+}
+
+.is-visible .about-final__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .about-final__title {
+    font-size: 1.8rem;
+  }
+
+  .about-final__description {
+    font-size: 0.9rem;
+  }
+    
+  /* .decor-path--vision {
+    left: -25%;
+    top: 40% !important;
+    width: 60%;
+  }
+
+  .decor-path--mission {
+    right: -15% !important;
+    top: 4% !important;
+    width: 60%;
+    rotate: -140deg !important;
+  } */
+}
+/* Desktop 1024px to 1444px */
+@media (min-width: 1024px) and (max-width: 1444px) {
+  .about-final__container {
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 20px;
+  }
+
+  .decor-path--vision {
+    left: -25%;
+    top: 30%;
+    width: 60%;
+  }
+
+  .decor-path--mission {
+    right: -25%;
+    top: 10%;
+    width: 60%;
+    rotate: -130deg;
+  }
+
+  .about-final__arrows {
+    bottom: -30px;
+    height: 220px;
+  }
+
+  .arrow--center {
+    width: 90px;
+  }
+}
+
+/* Desktop 1445px to 2500px */
+@media (min-width: 1445px) {
+  .about-final__container {
+    grid-template-columns: 1fr 1.2fr 1fr;
+  }
+}
+
+/* Tablet 600px to 1023px */
+@media (max-width: 1023px) {
+  .about-final {
+    padding: 60px 4%;
+  }
+  
+  .about-final__container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .about-final__content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .about-final__center {
+    order: -1; /* Move image to top or middle? Image shows Vision-Target-Mission stack */
+  }
+
+  .about-final__target-wrapper {
+    max-width: 350px;
+  }
+
+  .about-final__decor {
+    width: 100%;
+    display: none; /* Hide complex paths on tablet/mobile for better focus */
+  }
+}
+
+/* Mobile 320px to 600px */
+@media (max-width: 600px) {
+  .about-final {
+    padding: 40px 5%;
+  }
+
+  .about-final__title {
+    font-size: 1.8rem;
+  }
+
+  .about-final__description {
+    font-size: 0.95rem;
+  }
+
+  .about-final__target-wrapper {
+    max-width: 280px;
+  }
+
+  .arrow--center {
+    width: 50px;
+  }
+
+  .arrow--left, .arrow--right {
+    width: 30px;
+  }
+}
+
+/* Reverse Scroll Handled by IntersectionObserver + CSS transitions */
+/* When .is-visible is removed, elements will transition back to their initial state */

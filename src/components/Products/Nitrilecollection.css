@@ -32,7 +32,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: clamp(14px, 1.5vw, 16px);
-    color: #0d1b3e;
+    color: #142647;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     margin-bottom: 15px;
@@ -42,7 +42,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: clamp(28px, 5vw, 42px);
-    color: #0d1b3e;
+    color: #142647;
     line-height: 1.2;
     margin: 0;
 }
@@ -98,7 +98,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: clamp(18px, 3vw, 26px);
-    color: #0d1b3e;
+    color: #142647;
     margin: 30px 0 15px 0;
     text-transform: none;
 }
@@ -123,30 +123,45 @@
 
 .nitrile-banner-bg-img {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    /* height: 100%;
-    object-fit: fill;
-    z-index: -1;
-    pointer-events: none; */
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    pointer-events: none;
+}
+
+.nitrile-feature-item.left .nitrile-banner-bg-img {
+    left: 0;
+}
+
+.nitrile-feature-item.right .nitrile-banner-bg-img {
+    right: 0;
 }
 
 .nitrile-banner-content {
     position: relative;
     z-index: 5;
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 20px 0;
-    padding-top: 9%;
+    margin-top: 7%;
+    margin-left: -27px;
+    padding: 10px 0;
+}
+
+.nitrile-feature-item.left .nitrile-banner-content {
+    margin-right: auto;
+}
+
+.nitrile-feature-item.right .nitrile-banner-content {
+    margin-left: 29%;
 }
 
 .nitrile-number {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: clamp(40px, 9vw, 115px); /* Maximized high-standard look */
-    color: #0d1b3e;
+    color: white;
     line-height: 1;
     position: absolute;
 }
@@ -180,10 +195,11 @@
 
 .nitrile-description {
     font-family: 'Open Sans', sans-serif;
-    font-size: clamp(12px, 2.2vw, 31px);
-    color: #ffffff;
-    line-height: 1.5;
+    font-size: clamp(12px, 1.8vw, 24px);
+    color: #142647;
+    line-height: 1.4;
     margin: 0;
+    font-weight: 600;
 }
 
 .nitrile-feature-item:hover .nitrile-banner-bg-img {

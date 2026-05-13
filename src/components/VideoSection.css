@@ -133,7 +133,7 @@
 
 .video-headline h1 {
   color: #ffffff;
-  font-size: clamp(24px, 6vw, 56px);
+  font-size: clamp(24px, 4vw, 48px);
   /* Fluid typography */
   font-weight: 900;
   text-transform: uppercase;

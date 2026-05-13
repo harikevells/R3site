@@ -5,6 +5,14 @@ import useScrollReveal from '../hooks/useScrollReveal';
 
 const CompanyOverview = () => {
   const [ref, isVisible] = useScrollReveal();
+  
+  // Local SVG Diamond Icon to prevent missing asset errors
+  const DiamondIcon = () => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="diamond-icon-svg">
+      <path d="M12 2L2 12l10 10 10-10L12 2z" />
+    </svg>
+  );
+
   return (
     <section ref={ref} className={`company-overview section-padding ${isVisible ? 'in-view' : ''}`}>
       <div className="container center-content">
@@ -15,14 +23,17 @@ const CompanyOverview = () => {
         
         <div className="overview-text">
           <p>
-            R3 GLOBAL PTE LTD is a leading Singapore-based manufacturer and distributor of high-quality nitrile and latex examination gloves. We are dedicated to providing superior protective solutions for healthcare, industrial, and laboratory environments worldwide. Our commitment to excellence is reflected in every product we manufacture, ensuring the highest level of safety and reliability for our partners.
+            R3 Med delivers high-quality nitrile examination gloves engineered for healthcare, laboratory, industrial, and hygiene-critical environments. 
+            Combining Singapore-based reliability with global manufacturing capabilities, we provide consistent protection trusted by healthcare 
+            professionals and hygiene-focused industries worldwide.
           </p>
           <p>
-            With state-of-the-art production facilities and a robust supply chain, we support global healthcare systems and industrial sectors with consistent, high-standard medical consumables. Our journey began with a vision to redefine glove protection, and today, R3 Global stands as a trusted name in the medical supply industry, known for our innovation and uncompromising quality standards.
+            Our gloves are designed to offer the perfect balance of safety, comfort, and durability, ensuring dependable protection during demanding 
+            procedures and everyday hygiene tasks.
           </p>
         </div>
 
-        <button className="btn-read-more">READ MORE</button>
+        <button className="btn-read-more">Read More</button>
       </div>
     </section>
   );

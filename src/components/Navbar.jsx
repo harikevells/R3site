@@ -63,14 +63,13 @@ const Navbar = () => {
             <NavLink to="/" end onClick={(e) => handleLinkClick(e, '#home')}>HOME</NavLink>
             <NavLink to="/about" onClick={closeMobileMenu}>ABOUT</NavLink>
             <NavLink to="/global" onClick={closeMobileMenu}>GLOBAL</NavLink>
-                        <NavLink to="/certifications" onClick={closeMobileMenu}>CERTIFICATIONS</NavLink>
+            <NavLink to="/certifications" onClick={closeMobileMenu}>CERTIFICATIONS</NavLink>
 
             <div 
               className={`nav-dropdown ${isProductsDropdownOpen ? 'open' : ''}`}
               onMouseEnter={() => window.innerWidth > 1024 && setIsProductsDropdownOpen(true)}
               onMouseLeave={() => window.innerWidth > 1024 && setIsProductsDropdownOpen(false)}
             >
-            
               <NavLink 
                 to="/product/nitrile" 
                 onClick={(e) => {
@@ -90,9 +89,9 @@ const Navbar = () => {
                 <NavLink className="dropdown-item1" to="/product/latex" onClick={closeMobileMenu}>Latex</NavLink>
               </div>
             </div>
-            {/* <NavLink to="/" onClick={(e) => handleLinkClick(e, '#supply')}>SUPPLY</NavLink> */}
+            <NavLink to="/contact" className="nav-contact-link" onClick={closeMobileMenu}>CONTACT</NavLink>
           </div>
-            <NavLink to="/contact" className="btn-get-in" onClick={closeMobileMenu}>CONTACT</NavLink>
+          
           <div className="hamburger" onClick={toggleMobileMenu}>
             <span className={`bar ${isMobileMenuOpen ? 'active' : ''}`}></span>
             <span className={`bar ${isMobileMenuOpen ? 'active' : ''}`}></span>

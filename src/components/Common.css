@@ -11,7 +11,7 @@
 .common-apps-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: end;
+  /* align-items: end; */
   width: 100%;
   min-height: clamp(500px, 60vh, 800px);
 }
@@ -40,13 +40,13 @@
 }
 
 .common-apps-img {
-  width: 110%; /* Slightly oversized as requested */
-  height: 100%;
+  width: 80%; /* Slightly oversized as requested */
+  /* height: 100%; */
   object-fit: contain;
   object-position: left center; /* Ensure it touches the left edge */
   position: relative;
   z-index: 1;
-  margin-left: -5%; /* Pull it even further to the left if needed to bleed */
+  /* margin-left: -5%; Pull it even further to the left if needed to bleed */
   opacity: 0;
 }
 

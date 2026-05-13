@@ -33,12 +33,12 @@
 
 .latex-card-badge {
     display: inline-block;
-    padding: 4px 16px;
+    padding: 4px 28px;
     background-color: #ffe6e6;
     border: 1px solid #ffb3b3;
     color: #cc0033;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 24px;
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 15px;

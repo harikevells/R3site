@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../../assets/logo.svg';
 import gloveBg from '../../assets/NitriseGlove1.png'; // Hand with glove
 import handShadow from '../../assets/handshadow.png'; // Shadow
 // Assets for cards
@@ -69,9 +70,10 @@ const NitrileGlovesSection = () => {
 
             {/* Section 2 */}
             <section className="section-two" style={{ backgroundImage: `url(${handShadow})` }}>
-                <div className="section-two-overlay"></div>
+                <div className="section-two-overlay"> </div>
                 <div className="advantage-content">
-                    <h2 className="advantage-title">The R3 Global Advantage</h2>
+                    <div className="div"><img src={logo} alt="" /></div>
+                    <h2 className="advantage-title">The R3 Med Advantage</h2>
                     <p className="advantage-description">
                         Our nitrile gloves are designed to deliver premium protection, clinical reliability, and comfort that professionals trust.
                         Whether used in a medical facility, a laboratory, or a food-processing environment, they provide consistent performance backed by international standards.

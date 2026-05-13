@@ -5,14 +5,14 @@ import useScrollReveal from '../hooks/useScrollReveal';
 const MarketsWeServe = () => {
   const [ref, isVisible] = useScrollReveal();
   const row1 = [
-    { name: 'ASIA', bg: '#1a3a8f' },
+    { name: 'ASIA', bg: '#061E4C' },
     { name: 'MIDDLE EAST', bg: '#E31E24' },
-    { name: 'EUROPE', bg: '#1a3a8f' }
+    { name: 'EUROPE', bg: '#061E4C' }
   ];
   
   const row2 = [
-    { name: 'AFRICA', bg: '#E31E24' },
-    { name: 'NORTH AMERICA', bg: '#1a3a8f' }
+    { name: 'USA', bg: '#E31E24' },
+    { name: 'SOUTH AMERICA', bg: '#061E4C' }
   ];
 
   return (
@@ -24,8 +24,8 @@ const MarketsWeServe = () => {
           <div className="markets-text-content">
             <div className="markets-subheading">MARKETS WE SERVE</div>
             <h2 className="markets-main-heading">
-              R3 GLOBAL PRODUCTS ARE DISTRIBUTED <br />
-              ACROSS MULTIPLE REGIONS:
+              R3 MED PRODUCTS AND SERVICES ACROSS <br />
+              MULTIPLE REGIONS:
             </h2>
           </div>
 

@@ -3,6 +3,7 @@ import './About.css';
 import abouthands from '../../assets/abouthands.png';
 import MainAbout from './MainAbout';
 import NewAbout from './NewAbout';
+import AboutFinal from './AboutFinal';
 import AboutValue from './AboutValue';
 import useScrollReveal from '../../hooks/useScrollReveal';
 
@@ -29,14 +30,14 @@ const About = () => {
         <div className="about-hero">
           <div className="about-hero-content">
             <h1 className="about-main-heading">
-              <span className="text-red">Reliability</span><br /> Integrity. Global Trust.
+              <span className="text-red">Exceptional Quality</span><br />Reliability<br />Integrity.<br /><span className="text-red">Trust.</span>
             </h1>
 
             <p className="about-description">
-              R3 Global Pte Ltd is a Singapore-based medical manufacturing company specializing in high-quality nitrile examination gloves for healthcare, laboratory, industrial, and hygiene applications.
+              R3 Med is a Singapore-based medical device manufacturing company specializing in high-quality nitrile examination gloves for healthcare, laboratory, industrial, and hygiene applications.
             </p>
 
-            <div className="testimonial-container">
+            {/* <div className="testimonial-container">
               {testimonials.map((t, index) => (
                 <div key={t.id} className={`testimonial-card card-${index + 1}`}>
                   <div className="testimonial-avatar">
@@ -52,7 +53,7 @@ const About = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           <div className="about-hero-image-box">
@@ -65,6 +66,7 @@ const About = () => {
       </div>
 
       <MainAbout />
+      <AboutFinal />
       {/* <AboutValue /> */}
       <NewAbout />
     </>

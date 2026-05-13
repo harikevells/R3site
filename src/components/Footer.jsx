@@ -8,8 +8,7 @@ import {
   FaInfinity,
   FaYoutube,
   FaWhatsapp,
-  FaGlobe,
-  FaPhoneAlt
+  FaGlobe
 } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { Link } from 'react-router-dom';
@@ -24,18 +23,14 @@ const Footer = () => {
         {/* Top Header Section */}
         <div className="footer-header">
           <div className="footer-logo-box">
-            <img src={logo} alt="R3 Global Logo" className="footer-logo" />
+            <img src={logo} alt="R3 Med Logo" className="footer-logo" />
           </div>
           <div className="footer-contact-box">
             <h3>Contact</h3>
             <div className="contact-details">
               <div className="contact-item">
-                <FaPhoneAlt className="contact-icon" />
-                <span>+123 456 7890</span>
-              </div>
-              <div className="contact-item">
                 <MdEmail className="contact-icon" />
-                <span>care@r3global.com</span>
+                <span>care@r3global.com.sg</span>
               </div>
             </div>
           </div>
@@ -45,20 +40,16 @@ const Footer = () => {
         <div className="footer-social-row">
           <div className="footer-divider"></div>
           <div className="social-icons">
-            <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
-            <a href="#" aria-label="Messenger"><FaFacebookMessenger /></a>
-            <a href="#" aria-label="Twitter"><FaTwitter /></a>
-            <a href="#" aria-label="Infinity"><FaInfinity /></a>
             <a href="#" aria-label="YouTube"><FaYoutube /></a>
             <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
-            <a href="#" aria-label="Globe"><FaGlobe /></a>
+            <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
           </div>
           <div className="footer-divider"></div>
         </div>
 
         <div className="footer-brand-section">
-          <h2 className="brand-name">R3 Global Pte.Ltd</h2>
-          <p className="copyright">Copyright @R3 Global. All Rights Reserved.</p>
+          <h2 className="brand-name"></h2>
+          <p className="copyright">Copyright @R3 Global Pte Ltd. All Rights Reserved.</p>
         </div>
 
         {/* Navigation Section */}

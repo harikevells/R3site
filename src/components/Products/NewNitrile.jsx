@@ -1,7 +1,7 @@
 import React from 'react';
 import './Nitrilecollection.css';
 import examinationGlove from '../../assets/nitrile_gloves.png';
-import surgicalGlove from '../../assets/boxmodel.webp';
+import surgicalGlove from '../../assets/boxmodel.png';
 import useScrollReveal from '../../hooks/useScrollReveal';
 
 const NewNitrile = () => {
@@ -20,7 +20,7 @@ const NewNitrile = () => {
                     {/* Centered Header for Section 2 */}
                     <div className={`latex-header ${isVisible2 ? 'in-view-top' : 'reveal-fade'}`}>
                         <span className="latex-eyebrow">Nitrile</span>
-                        <h2 className="latex-title">Surgical Gloves</h2>
+                        <h2 className="latex-title">Examination Gloves</h2>
                         <p className="latex-subtitle">Sterile, Precision-Engineered Gloves for Advanced Surgical Procedures</p>
                     </div>
 

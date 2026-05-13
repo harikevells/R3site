@@ -54,13 +54,12 @@
 /* Content Body Flexbox Layout */
 .latex-main-row {
     display: flex;
-    align-items: stretch;
-    /* Stretch to keep image and list aligned */
+    align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
     transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 60px;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 /* Section 1: Image Left, Text Right (row-reverse) */
@@ -107,14 +106,11 @@
 }
 
 .latex-badge {
-    background-color: #FA06012E;
-    color: #FF0500;
-    padding: 8px 18px;
+    color: #FF0000;
     font-weight: 700;
-    font-size: clamp(11px, 1.2vw, 13px);
+    font-size: clamp(12px, 1.4vw, 25px);
     text-transform: uppercase;
-    letter-spacing: 0.8px;
-    border-radius: 2px;
+    letter-spacing: 1px;
     white-space: nowrap;
 }
 
@@ -158,29 +154,32 @@
 
 /* Image Area */
 .latex-image-box {
-    flex: 1.5;
-    max-width: 800px;
-    border-radius: 24px;
-    overflow: hidden;
-    /* Removed sticky to keep it aligned with Key Features precisely */
+    flex: 1;
+    /* max-width: 600px; */
+    /* border: 3px solid #FF0000; */
+    border-radius: 80px 10px 80px 10px;
+    padding: 12px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
 }
 
 .latex-img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
-    object-fit: cover;
-    border-radius: 22px;
-    border-top-left-radius: 80px;
-       /* margin-top: -75px; */
-    /* Specific corner styling for default (right) side */
+    object-fit: contain;
+    border-radius: 70px 0px 20px 0px;
 }
 
 /* Mirrored corner styling for section with image on the left */
 .latex-main-row.alt .latex-img {
-    border-top-left-radius: 24px;
-    border-top-right-radius: 80px;
+    border-radius: 0px 70px 0px 70px;
+}
+
+.latex-main-row.alt .latex-image-box {
+    border-radius: 10px 80px 10px 80px;
 }
 
 /* Applications Area */

@@ -28,6 +28,7 @@
     opacity: 0;
     transform: translateY(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -39,6 +40,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -46,9 +48,17 @@
 }
 
 @keyframes diamondRotate {
-  0% { transform: rotate(0deg) scale(1); }
-  50% { transform: rotate(180deg) scale(1.2); }
-  100% { transform: rotate(360deg) scale(1); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 .diamond-icon {
@@ -67,6 +77,7 @@
   font-size: var(--font-size-section);
   color: var(--dark-navy);
   color: #FB0603;
+  font-weight: 700;
 }
 
 .overview-text {
@@ -85,8 +96,13 @@
   animation: fadeInUp 0.8s ease-out both;
 }
 
-.company-overview.in-view .overview-text p:nth-child(1) { animation-delay: 0.4s; }
-.company-overview.in-view .overview-text p:nth-child(2) { animation-delay: 0.6s; }
+.company-overview.in-view .overview-text p:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.company-overview.in-view .overview-text p:nth-child(2) {
+  animation-delay: 0.6s;
+}
 
 .btn-read-more {
   background: transparent;
@@ -120,7 +136,7 @@
     text-align: justify;
   }
 
-  
+
 
   .section-padding {
     padding: 40px 0;

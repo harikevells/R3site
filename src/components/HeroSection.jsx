@@ -35,14 +35,17 @@ const HeroSection = () => {
 
           <div className="hero-title-wrapper">
             <h1 className="hero-title first-line">
-              <span>R3 GLOBAL</span>
+              <span>R3 Med</span>
               <span className="red-slash">/</span>
               <div className="nitrile-latex-box">
                 <span className="label-text">NITRILE</span>
                 <span className="label-text">LATEX</span>
               </div>
             </h1>
-            <h1 className="hero-title second-line fof12">Serving the World</h1>
+            <p className="hero-description">
+              R3 Med is a healthcare-focused organization that provides advanced medical, regenerative, and 
+              wellness services aimed at improving overall health, aesthetics, and patient outcomes.
+            </p>
           </div>
 
           <button className="btn-get-started">Get Started</button>
@@ -78,7 +81,7 @@ const HeroSection = () => {
             </div>
 
             {/* Review Cards */}
-            <div className="review-card review-1">
+            {/* <div className="review-card review-1">
               <div className="user-avatar">
                 <img src="https://i.pravatar.cc/150?u=amula" alt="Amula" />
               </div>
@@ -96,12 +99,12 @@ const HeroSection = () => {
                 <p className="user-name">Dikta Anmol</p>
                 <div className="stars">★★★★☆</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
-      <div className="logo-strip">
+      {/* <div className="logo-strip">
         <div className="logo-strip-inner">
           {logos.concat(logos).concat(logos).map((logo, index) => (
             <div key={index} className="logo-item">
@@ -109,7 +112,7 @@ const HeroSection = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

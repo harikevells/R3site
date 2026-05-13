@@ -1,7 +1,7 @@
 import React from 'react';
 import './LatexNew.css';
-import examGlove from '../../../assets/examinationglove.png';
-import surgicalGlove from '../../../assets/boxmodel.webp';
+import examGlove from '../../../assets/whiteglove.png';
+import surgicalGlove from '../../../assets/boxmodel1.png';
 import useScrollReveal from '../../../hooks/useScrollReveal';
 
 const LatexNew = () => {
@@ -30,7 +30,7 @@ const LatexNew = () => {
                             </div>
                             <h3 className="latex-subheading">Key Features</h3>
                             <ul className="latex-list">
-                                <li className="latex-list-item">Natural Elasticity – Snug, second-skin fit for better touch sensitivity</li>
+                                <li className="latex-list-item">Natural Elasticity – Snug, second-skin fit for maximum sensitivity</li>
                                 <li className="latex-list-item">High Protection – Guards against bacteria and fluids</li>
                                 <li className="latex-list-item">Strong & Flexible – Excellent stretch and tear resistance</li>
                                 <li className="latex-list-item">Powder Options – Available in powdered & powder-free (reduced allergy risk)</li>
@@ -54,7 +54,7 @@ const LatexNew = () => {
                             <li className="latex-list-item">Medical examinations</li>
                             <li className="latex-list-item">Nursing procedures</li>
                             <li className="latex-list-item">Laboratory sample handling</li>
-                            <li className="latex-list-item">General hygiene and cleaning tasks</li>
+                            <li className="latex-list-item">Non-sterile clinic and cleanroom</li>
                             <li className="latex-list-item">Dental diagnostics</li>
                         </ul>
                     </div>
@@ -70,7 +70,7 @@ const LatexNew = () => {
                     {/* Centered Header for Section 2 */}
                     <div className={`latex-header ${isVisible2 ? 'in-view-top' : 'reveal-fade'}`}>
                         <span className="latex-eyebrow">Latex</span>
-                        <h2 className="latex-title">surgical Gloves</h2>
+                        <h2 className="latex-title">Surgical Gloves</h2>
                         <p className="latex-subtitle">Sterile, High-Precision Gloves for Critical Procedures</p>
                     </div>
 
@@ -84,8 +84,8 @@ const LatexNew = () => {
                             <h3 className="latex-subheading format2">Key Features</h3>
                             <ul className="latex-list ments">
                                 <li className="latex-list-item">Sterile & Individually Packed – Ensures maximum hygiene</li>
-                                <li className="latex-list-item">Anatomical Fit – Reduces fatigue in long procedures</li>
-                                <li className="latex-list-item">High Sensitivity – Ideal for precise surgical tasks</li>
+                                <li className="latex-list-item">Anatomic Fit – Reduces fatigue in long procedures</li>
+                                <li className="latex-list-item">High Sensitivity – Precise tactile feedback for surgeons</li>
                                 <li className="latex-list-item">Strong & Durable – Tear and puncture resistant</li>
                                 <li className="latex-list-item">Enhanced Grip – Micro-textured for better control</li>
                             </ul>

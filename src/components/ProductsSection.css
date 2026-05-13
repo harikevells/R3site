@@ -153,8 +153,8 @@
 
 .product-sub-title {
   color: #E53935;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 800 !important;
   font-family: 'Google Sans';
   margin-bottom: 15px;
 }

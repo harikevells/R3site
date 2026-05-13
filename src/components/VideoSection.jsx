@@ -30,7 +30,7 @@ const VideoSection = () => {
         </div>
 
         <div className="video-headline">
-          <h1>HIGH-QUALITY NITRILE<br />EXAM GLOVES</h1>
+          <h1>HIGH-QUALITY NITRILE<br />EXAMINATION GLOVES</h1>
         </div>
       </div>
     </section>

@@ -39,7 +39,7 @@
 }
 
 .ct-main-heading {
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
     font-weight: 800;
     font-family: 'Google Sans';
     text-transform: none !important;

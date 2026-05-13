@@ -24,7 +24,7 @@ const ProductNitrile = () => {
             <section className="pn-info-section">
                 <h1 className="pn-info__title">Examination Gloves</h1>
                 <p className="pn-info__description">
-                    At R3 Global, we believe protective gloves are more than consumables — they are a frontline barrier safeguarding healthcare workers, laboratory professionals, and food-industry teams. Our nitrile gloves are engineered from high-grade nitrile butadiene rubber (NBR), delivering exceptional durability, chemical resistance, and comfort without the allergy risks associated with latex.
+                    At R3 Med, we believe protective gloves are more than consumables — they are a frontline barrier safeguarding healthcare workers, laboratory professionals, and food-industry teams. Our nitrile gloves are engineered from high-grade nitrile butadiene rubber (NBR), delivering exceptional durability, chemical resistance, and comfort without the allergy risks associated with latex.
                 </p>
             </section>
 

@@ -16,7 +16,7 @@ const ProductsSection = () => {
           <div className="product-text-block left-block">
             <h3 className="product-sub-title">Nitrile Examination Gloves</h3>
             <p className="product-body-text">
-              R3 Global nitrile examination gloves are engineered to
+              R3 Med nitrile examination gloves are engineered to
               deliver superior barrier protection, durability, and comfort
               for professionals working in healthcare, laboratories, and
               hygiene-critical industries.

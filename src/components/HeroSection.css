@@ -210,6 +210,23 @@
   display: block;
 }
 
+.hero-description {
+  color: #666;
+  font-size: clamp(14px, 1.2vw, 17px);
+  line-height: 1.8;
+  max-width: 600px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  font-family: 'DM Sans', sans-serif;
+  text-transform: none;
+  opacity: 0;
+}
+
+.hero-section.in-view .hero-description {
+  animation: fadeInUp 0.8s ease-out both;
+  animation-delay: 0.7s;
+}
+
 .btn-get-started {
   background-color: #061E4C;
   color: #fff;
