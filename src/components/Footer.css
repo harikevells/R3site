@@ -24,12 +24,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .footer-logo-box {
   /* background-color: #fff; */
-  padding: 10px;
+  padding-top: 14px;
+  padding-left: 15px;
   border-radius: 0px;
   opacity: 0;
 }

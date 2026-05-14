@@ -34,7 +34,7 @@ const About = () => {
             </h1>
 
             <p className="about-description">
-              R3 Med is a Singapore-based medical device manufacturing company specializing in high-quality nitrile examination gloves for healthcare, laboratory, industrial, and hygiene applications.
+              R3 Global is a Singapore based medical device manufacturing company specializing in high-quality Nitrile Examination Gloves for healthcare, laboratory, industrial, and hygiene applications.
             </p>
 
             {/* <div className="testimonial-container">

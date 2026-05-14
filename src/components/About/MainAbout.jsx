@@ -12,7 +12,7 @@ const MainAbout = () => {
         <div className="about-stats__left">
           <h2 className="about-stats__heading">ABOUT US</h2>
           <p className="about-stats__para">
-            R3 Med is a Singaporebased medical device manufacturer
+            R3 Global is a Singapore based medical device manufacturer
             partnering with trusted factories
             across Asia to produce highquality gloves and healthcare
             products. We oversee every stage of

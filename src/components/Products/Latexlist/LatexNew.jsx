@@ -70,7 +70,7 @@ const LatexNew = () => {
                     {/* Centered Header for Section 2 */}
                     <div className={`latex-header ${isVisible2 ? 'in-view-top' : 'reveal-fade'}`}>
                         <span className="latex-eyebrow">Latex</span>
-                        <h2 className="latex-title">Surgical Gloves</h2>
+                        <h2 className="latex-title">Examination Gloves</h2>
                         <p className="latex-subtitle">Sterile, High-Precision Gloves for Critical Procedures</p>
                     </div>
 
@@ -79,7 +79,7 @@ const LatexNew = () => {
                         <div className="latex-text-content">
                             <div className="latex-badge-wrapper badge-reverse ments1">
                                 <div className="latex-line"></div>
-                                <div className="latex-badge">Latex Surgical Gloves</div>
+                                <div className="latex-badge">Latex Examination Gloves</div>
                             </div>
                             <h3 className="latex-subheading format2">Key Features</h3>
                             <ul className="latex-list ments">
@@ -100,7 +100,7 @@ const LatexNew = () => {
                     <div className={`latex-apps-section ${isVisible2 ? 'in-view' : 'reveal-fade'}`}>
                         <div className="latex-badge-wrapper badge-reverse ments1">
                             <div className="latex-line"></div>
-                            <div className="latex-badge">Latex Surgical Gloves</div>
+                            <div className="latex-badge">Latex Examination Gloves</div>
                         </div>
                         <h3 className="latex-subheading format2">Common Applications</h3>
                         <ul className="latex-list latex-apps-list">

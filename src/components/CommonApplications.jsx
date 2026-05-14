@@ -1,5 +1,5 @@
 import React from 'react';
-import glovesImage from '../assets/commonapplication.png';
+import glovesImage from '../assets/commication1.png';
 import './Common.css';
 import useScrollReveal from '../hooks/useScrollReveal';
 

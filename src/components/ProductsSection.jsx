@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProductsSection.css';
-import handsImg from '../assets/hands.png';
+import handsImg from '../assets/purpleglove.png';
+import whiteGlove from '../assets/whiteGlove1.png';
+import nitriseGlove from '../assets/glovecolor.png';
 import { FiArrowRight } from 'react-icons/fi';
 import useScrollReveal from '../hooks/useScrollReveal';
 
 const ProductsSection = () => {
   const [ref, isVisible] = useScrollReveal();
+  const [currentIdx, setCurrentIdx] = useState(0);
+  
+  const carouselImages = [handsImg, whiteGlove];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIdx((prev) => (prev + 1) % carouselImages.length);
+    }, 3000); // Change image every 3 seconds
+    return () => clearInterval(timer);
+  }, [carouselImages.length]);
+
   return (
     <section ref={ref} className={`products-redesign-section ${isVisible ? 'in-view' : ''}`}>
       <div className="products-container">
@@ -28,9 +41,18 @@ const ProductsSection = () => {
             </p>
           </div>
 
-          {/* Center Image Block */}
+          {/* Center Carousel Block */}
           <div className="product-image-block">
-            <img src={handsImg} alt="Nitrile Gloves" className="center-glove-image" />
+            <div className="carousel-wrapper">
+              {carouselImages.map((img, idx) => (
+                <img
+                  key={idx}
+                  src={img}
+                  alt={`Product ${idx + 1}`}
+                  className={`center-glove-image ${idx === currentIdx ? 'active' : ''}`}
+                />
+              ))}
+            </div>
           </div>
 
           {/* Right Text Block */}
@@ -55,25 +77,20 @@ const ProductsSection = () => {
             viewBox="0 0 1200 800"
             preserveAspectRatio="none"
           >
-            {/* Left wave curve: Text -> Glove */}
             <path
               className="arrow-line-path"
               d="M 380 280 C 430 280 420 360 480 400"
             />
-            {/* Left Icon Node */}
             <foreignObject x="360" y="260" width="40" height="40">
               <div className="product-icon-container">
-
                 <FiArrowRight className="product-arrow-icon right-arrow" />
               </div>
             </foreignObject>
 
-            {/* Right wave curve: Glove -> Text */}
             <path
               className="arrow-line-path"
               d="M 720 320 C 780 320 780 420 830 460"
             />
-            {/* Right Icon Node */}
             <foreignObject x="810" y="440" width="40" height="40">
               <div className="product-icon-container">
                 <FiArrowRight className="product-arrow-icon left-arrow" />

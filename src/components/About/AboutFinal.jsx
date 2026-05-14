@@ -14,7 +14,7 @@ const AboutFinal = () => {
         <div className="about-final__content vision">
           <h2 className="about-final__title">Our vision</h2>
           <p className="about-final__description">
-            R3 Global nitrile examination gloves are engineered to deliver superior barrier protection, 
+            R3 Global Nitrile Examination Gloves are engineered to deliver superior barrier protection, 
             durability, and comfort for professionals working in healthcare, laboratories, and 
             hygiene-critical industries.
           </p>

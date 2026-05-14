@@ -30,23 +30,40 @@
 
 /* Image Styling */
 .our-nitrile-image-container {
-    /* width: 100%; */
-    
     position: relative;
 }
-.our-nitrile-image-container,.sing{
 
-    margin-right: -128px !important;
+.section-1 .our-nitrile-image-col {
+    margin-right: -60px; /* Bleed to the right edge */
 }
+
+.section-1 .our-nitrile-image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section-2 .our-nitrile-image-col {
+    margin-left: -60px; /* Bleed to the left edge */
+}
+
 .our-nitrile-image-container img {
+    margin-left: 0;
     width: 100%;
+    max-width: 600px; /* Cap size on desktop */
     height: auto;
     display: block;
-    margin-left: -63px;
-    object-fit: cover;
-    /* The SVG contains the border and radius, but if using standard images: */
-    /* border: 4px solid #e00000;
-    border-radius: 12px; */
+}
+
+.section-1 .sing {
+    margin-right: -100px !important;
+    /* width: auto !important; */
+    max-width: none !important; /* Allow bleed on desktop */
+}
+
+.section-2 .our-nitrile-image-container img {
+    margin-left: -100px !important;
+    /* width: auto !important; */
+    max-width: none !important; /* Allow bleed on desktop */
 }
 
 /* Content Column Styling */
@@ -56,7 +73,8 @@
 }
 
 .our-nitrile-content-col.align-right {
-    align-items: flex-start; /* Still aligned left but labels change */
+    align-items: flex-end; /* Align content to the right */
+    text-align: right;
 }
 
 /* Red Label Styling */
@@ -119,11 +137,30 @@
 }
 
 .our-nitrile-bullet-list li::before {
-    content: "▪";
-    color: #e00000;
-    font-size: 20px; /* Increased */
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M4 4l10 8-10 8V4z' fill='%23e00000'/%3E%3Cpath d='M14 4l10 8-10 8' fill='none' stroke='%23e00000' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-right: 14px;
-    line-height: 1;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.mands li::before {
+    content: none;
+}
+
+.mands li::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M20 4l-10 8 10 8V4z' fill='%23e00000'/%3E%3Cpath d='M10 4l-10 8 10 8' fill='none' stroke='%23e00000' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 14px;
+    margin-top: 5px;
     flex-shrink: 0;
 }
 
@@ -171,7 +208,9 @@
     
     .our-nitrile-section, 
     .our-nitrile-section.section-2 {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column-reverse;
         gap: 50px;
     }
 
@@ -183,8 +222,72 @@
         font-size: 24px;
     }
 
-    .label-right {
-        justify-content: flex-start;
+    /* Align images to their respective edges in mobile/tablet */
+    .our-nitrile-image-container img {
+        width: 85% !important; /* Reduced width for better proportion on mobile */
+        max-width: 380px !important; /* Capped size */
+        height: auto !important;
+        object-fit: contain;
+    }
+
+    .section-1 .our-nitrile-image-col {
+        margin-right: -40px;
+        margin-left: 0;
+        align-items: flex-end;
+    }
+
+    .section-1 .sing {
+        margin-right: -30% !important;
+        width: 100% !important;
+        margin-left: auto !important;
+    }
+
+    .section-2 .our-nitrile-image-col {
+        margin-left: -40px;
+        margin-right: 0;
+        align-items: flex-start;
+    }
+
+    .section-2 .our-nitrile-image-container img {
+        margin-left: -30% !important;
+        margin-right: auto !important;
+    }
+
+    /* Fix text alignment to match image alignment in mobile */
+    .section-1 .our-nitrile-content-col {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .section-2 .our-nitrile-content-col.align-right {
+        align-items: flex-end;
+        text-align: end;
+        width: 100%;
+    }
+
+    .section-1 .our-nitrile-label-group {
+        justify-content: flex-end;
+    }
+
+    .section-2 .our-nitrile-label-group.label-right {
+        justify-content: flex-end;
+    }
+
+    .section-1 .our-nitrile-bullet-list li {
+        justify-content: flex-end;
+        text-align: right;
+    }
+    
+    .section-1 .our-nitrile-bullet-list li::before {
+        order: 2;
+        margin-right: 0;
+        margin-left: 14px;
+        transform: rotate(180deg); /* Mirror arrow for right-aligned text */
+    }
+
+    .section-2 .our-nitrile-bullet-list li {
+        justify-content: flex-end;
+        text-align: left;
     }
 }
 
@@ -197,6 +300,21 @@
         padding: 0 25px;
         gap: 70px;
     }
+
+    .section-1 .our-nitrile-image-col,
+    .section-1 .sing {
+        margin-right: -25px !important;
+    }
+
+    .section-2 .our-nitrile-image-col,
+    .section-2 .our-nitrile-image-container img {
+        margin-left: -25px !important;
+    }
+        .our-nitrile-main-heading {
+
+            font-size: 18px !important;
+
+        }
 }
 
 /* Scroll Reveal Animations */

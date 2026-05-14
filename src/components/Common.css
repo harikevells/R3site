@@ -46,6 +46,7 @@
   object-position: left center; /* Ensure it touches the left edge */
   position: relative;
   z-index: 1;
+  margin-left: -10px;
   /* margin-left: -5%; Pull it even further to the left if needed to bleed */
   opacity: 0;
 }
@@ -121,7 +122,7 @@
     grid-template-columns: 1fr !important;
   }
   .image-col {
-    height: 420px !important;
+    /* height: 720px !important; */
     justify-content: center !important;
   }
   .common-apps-img {
@@ -134,7 +135,7 @@
     text-align: center !important;
   }
   .apps-list {
-    align-items: center !important;
+    align-items: left !important;
   }
 }
 

@@ -75,7 +75,7 @@ const Global = () => {
           <div className="cp-container">
               <h2 className="cp-section-title cp-section-title--with-icons">
                   Global Reach
-                  <span className="cp-title-icons"><img src={futureproductc} alt="" /></span>
+                  {/* <span className="cp-title-icons"><img src={futureproductc} alt="" /></span> */}
               </h2>
 
               <div className="cp-global__map-container">

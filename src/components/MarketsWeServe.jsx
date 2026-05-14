@@ -11,8 +11,8 @@ const MarketsWeServe = () => {
   ];
   
   const row2 = [
-    { name: 'USA', bg: '#E31E24' },
-    { name: 'SOUTH AMERICA', bg: '#061E4C' }
+    { name: 'AFRICA', bg: '#E31E24' },
+    { name: 'AMERICA', bg: '#061E4C' }
   ];
 
   return (
