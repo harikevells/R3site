@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductNitrile.css';
 import nethands from '../../assets/nethands.png';
-import netcenterbg from '../../assets/netcenterbg.png';
+import netcenterbg from '../../assets/Nitrilenew1.png';
 import useScrollReveal from '../../hooks/useScrollReveal';
 import Nitrilecollection from './Nitrilecollection';
 import GloveDown from './GloveDown';

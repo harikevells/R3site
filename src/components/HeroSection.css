@@ -35,7 +35,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/herobgimage.png');
+  background-image: url('../assets/Homebg2.webp');
   background-size: cover;
   background-position: center;
   filter: brightness(0.8);
@@ -80,6 +80,8 @@
   margin-top: 20px;
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   opacity: 0;
   transform: translateZ(100px) scale(0.8);
@@ -145,6 +147,7 @@
 
 /* Glassmorphism Badge */
 .hero-tagline.glass-effect {
+  display: inline-block;
   font-size: clamp(14px, 1.6vw, 18px);
   font-weight: 900;
   letter-spacing: 6px;
@@ -184,6 +187,7 @@
 .hero-actions {
   display: flex;
   gap: 20px;
+  margin-top: 40px;
   opacity: 0;
   transform: translateZ(60px) translateY(20px);
   transition: all 0.8s ease-out;

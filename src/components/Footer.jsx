@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo12.png';
 import {
   FaLinkedinIn,
   FaFacebookMessenger,
@@ -60,14 +60,15 @@ const Footer = () => {
           <div className="nav-column">
             <h3><Link to="/product/nitrile">Products</Link></h3>
           </div>
-          <div className="nav-column">
-            <h3><Link to="/global">Global</Link></h3>
-          </div>
+         
           <div className="nav-column">
             <h3><Link to="/certifications">Certification</Link></h3>
           </div>
+           <div className="nav-column">
+            <h3><Link to="/global">Our Markets</Link></h3>
+          </div>
           <div className="nav-column">
-            <h3><Link to="/contact">Contact us</Link></h3>
+            <h3><Link to="/contact">Contact Us</Link></h3>
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo12.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -61,10 +61,8 @@ const Navbar = () => {
         <div className="nav-actions">
           <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
             <NavLink to="/" end onClick={(e) => handleLinkClick(e, '#home')}>HOME</NavLink>
-            <NavLink to="/about" onClick={closeMobileMenu}>ABOUT</NavLink>
-            <NavLink to="/global" onClick={closeMobileMenu}>GLOBAL</NavLink>
-            <NavLink to="/certifications" onClick={closeMobileMenu}>CERTIFICATIONS</NavLink>
-
+            <NavLink to="/about" onClick={closeMobileMenu}>ABOUT US</NavLink>
+            
             <div 
               className={`nav-dropdown ${isProductsDropdownOpen ? 'open' : ''}`}
               onMouseEnter={() => window.innerWidth > 1024 && setIsProductsDropdownOpen(true)}
@@ -89,6 +87,9 @@ const Navbar = () => {
                 <NavLink className="dropdown-item1" to="/product/latex" onClick={closeMobileMenu}>Latex</NavLink>
               </div>
             </div>
+
+            <NavLink to="/certifications" onClick={closeMobileMenu}>CERTIFICATIONS</NavLink>
+            <NavLink to="/global" onClick={closeMobileMenu}>OUR MARKETS</NavLink>
             <NavLink to="/contact" className="nav-contact-link" onClick={closeMobileMenu}>CONTACT</NavLink>
           </div>
           

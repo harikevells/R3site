@@ -1,6 +1,6 @@
 import React from 'react';
 import './LatexNew.css';
-import examGlove from '../../../assets/whiteglove.png';
+import examGlove from '../../../assets/boxmodel1.png';
 import surgicalGlove from '../../../assets/boxmodel1.png';
 import useScrollReveal from '../../../hooks/useScrollReveal';
 
@@ -62,19 +62,19 @@ const LatexNew = () => {
             </div>
 
             {/* Main Red Divider - Moved outside container for full width */}
-            <div className="latex-divider-main"></div>
+            {/* <div className="latex-divider-main"></div> */}
 
-            <div className="latex-container">
-                {/* Section 2: Surgical Gloves */}
+            {/* <div className="latex-container">
+            
                 <div ref={ref2} className="latex-product-item">
-                    {/* Centered Header for Section 2 */}
+    
                     <div className={`latex-header ${isVisible2 ? 'in-view-top' : 'reveal-fade'}`}>
                         <span className="latex-eyebrow">Latex</span>
                         <h2 className="latex-title">Examination Gloves</h2>
                         <p className="latex-subtitle">Sterile, High-Precision Gloves for Critical Procedures</p>
                     </div>
 
-                    {/* Main Content Area: Key Features + Image (Reverse) */}
+                
                     <div className={`latex-main-row alt ${isVisible2 ? 'in-view' : 'reveal-left'}`}>
                         <div className="latex-text-content">
                             <div className="latex-badge-wrapper badge-reverse ments1">
@@ -96,7 +96,7 @@ const LatexNew = () => {
                         </div>
                     </div>
 
-                    {/* Applications Area: Full Width Below */}
+            
                     <div className={`latex-apps-section ${isVisible2 ? 'in-view' : 'reveal-fade'}`}>
                         <div className="latex-badge-wrapper badge-reverse ments1">
                             <div className="latex-line"></div>
@@ -112,7 +112,8 @@ const LatexNew = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
         </section>
     );
 };

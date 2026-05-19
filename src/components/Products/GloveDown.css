@@ -253,7 +253,7 @@
 }
 
 .div img {
-    width: 180px;
+    width: 205px;
     height: auto;
 }
 
@@ -266,7 +266,7 @@
 }
 
 .advantage-title {
-    font-size: clamp(24px, 4.5vw, 56px);
+    font-size: clamp(24px, 4.5vw, 50px);
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 3px;

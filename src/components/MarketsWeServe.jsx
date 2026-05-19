@@ -24,8 +24,7 @@ const MarketsWeServe = () => {
           <div className="markets-text-content">
             <div className="markets-subheading">MARKETS WE SERVE</div>
             <h2 className="markets-main-heading">
-              R3 MED PRODUCTS AND SERVICES ACROSS <br />
-              MULTIPLE REGIONS:
+              
             </h2>
           </div>
 

@@ -37,7 +37,7 @@
 .markets-subheading {
   font-family: 'Google Sans';
   font-weight: 700;
-  font-size: clamp(14px, 5.5vw, 27px); /* Fluid font size */
+  font-size: clamp(14px, 5.5vw, 50px); /* Fluid font size */
   color: #E31E24;
   letter-spacing: 0.1em;
   margin-bottom: 12px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductNitrile.css';
 import nethands from '../../assets/latexhands.png';
-import netcenterbg from '../../assets/Group 1000001899.png';
+import netcenterbg from '../../assets/wire2.png';
 import useScrollReveal from '../../hooks/useScrollReveal';
 import LatexNew from './Latexlist/LatexNew';
 import LatexPart from './Latexlist/LatexPart';
@@ -19,7 +19,7 @@ const ProductLATEX = () => {
             </section>
 
             <section className="pn-info-section">
-                <h1 className="pn-info__title">Examination & Surgical Gloves</h1>
+                <h1 className="pn-info__title">Examination Gloves</h1>
                 <p className="pn-info__description">
 Latex gloves have long been the gold standard in medical environments due to their exceptional elasticity, tactile sensitivity, and natural comfort. Made from high-quality natural rubber latex, these gloves provide a reliable barrier against contaminants while supporting precision-based tasks in healthcare and laboratory settings.         </p>
             </section>

@@ -33,11 +33,12 @@ const NewNitrile = () => {
                             </div>
                             <h3 className="latex-subheading format2">Key Features</h3>
                             <ul className="latex-list ments">
-                                <li className="latex-list-item">Sterile & Individually Packed – Maintains surgical-grade hygiene</li>
-                                <li className="latex-list-item">Superior Grip – Textured fingertips for enhanced control</li>
-                                <li className="latex-list-item">Exceptional Durability – Highly resistant to punctures and tears</li>
-                                <li className="latex-list-item">Latex-Free Safety – Safe for all patients and medical professionals</li>
-                                <li className="latex-list-item">Optimal Sensitivity – Precise tactile feedback for critical procedures</li>
+                                <li className="latex-list-item">Latex‑Free Protection – Safe for users with latex allergies or sensitivities</li>
+                                <li className="latex-list-item">High Chemical Resistance – Shields against oils, solvents, and a wide range of chemicals</li>
+                                <li className="latex-list-item">Strong & Durable – Superior puncture and tear resistance compared to latex or vinyl</li>
+                                <li className="latex-list-item">Comfortable Fit – Soft, flexible material for extended wear and excellent tactile sensitivity</li>
+                                <li className="latex-list-item">Powder‑Free Design – Clean handling with reduced contamination risk</li>
+                                <li className="latex-list-item">Versatile Use – Ideal for medical, laboratory, food, and industrial applications</li>
                             </ul>
                         </div>
 

@@ -1,6 +1,6 @@
 .nitrile-collection-wrapper {
     width: 100%;
-    padding: 100px 0;
+    padding: 0px 0;
     background-color: #ffffff;
     overflow: hidden;
     font-family: 'Inter', sans-serif;
@@ -20,7 +20,7 @@
 .nitrile-eyebrow {
     color: #142647;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 48px;
     margin-bottom: 10px;
 }
 

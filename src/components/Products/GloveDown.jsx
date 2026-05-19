@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/medlogo.png';
 import gloveBg from '../../assets/NitriseGlove1.png'; // Hand with glove
 import handShadow from '../../assets/handshadow.png'; // Shadow
 // Assets for cards

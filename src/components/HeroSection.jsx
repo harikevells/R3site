@@ -39,9 +39,7 @@ const HeroSection = () => {
       
       <div className="hero-container" style={tiltStyle}>
         <div className="hero-content">
-          <div className="hero-badge-reveal">
-            <span className="hero-tagline glass-effect text-capitalize">Trust Built on Integrity. Quality Beyond Expectation.</span>
-          </div>
+         
           
           <h1 className="hero-main-title 3d-text">
             <span className="title-word">R3 </span>
@@ -53,34 +51,33 @@ const HeroSection = () => {
           </h1>
 
           <div className="hero-divider"></div>
+ <div className="hero-badge-reveal">
+            <span className="hero-tagline glass-effect">MAKING THE WORLD SAFER</span>
+          </div>
+  
 
-          <p className="hero-description">
-            R3 Global is a healthcare-focused organization that provides advanced medical, regenerative, and 
-            wellness services aimed at improving overall health, aesthetics, and patient outcomes.
-          </p>
-
-          <div className="hero-actions">
-            <Link to="/about" className="hero-btn btn-filled">
-              Get Started
+          {/* <div className="hero-actions">
+            <Link to="/product/nitrile" className="hero-btn btn-filled">
+              Our Products
               <svg className="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </Link>
-            <Link to="/product/nitrile" className="hero-btn btn-outline">
-              Our Products
+            <Link to="/about" className="hero-btn btn-outline">
+              About R3 Global
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
 
-      <div className="hero-scroll-down">
+      {/* <div className="hero-scroll-down">
         <div className="scroll-mouse">
           <div className="scroll-wheel"></div>
         </div>
         <span className="scroll-text">Explore More</span>
-      </div>
+      </div> */}
     </section>
   );
 };

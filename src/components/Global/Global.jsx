@@ -125,8 +125,8 @@ const Global = () => {
         {/* Why section */}
         <section className="why-section">
             <h2 ref={whyTitleRef} className={`why-title ${whyTitleVisible ? 'in-view' : ''}`}>
-              <span className="text-red">Why</span> <br />
-              <span className="text-black">Asian Nitrile Gloves Dominate Global Markets?</span>
+              <span className="text-red">Why  </span>
+              <span className="text-black"> Asian Nitrile Gloves Dominate Global Markets?</span>
             </h2>
 
             <ul ref={whyListRef} className={`why-list ${whyListVisible ? 'in-view' : ''}`}>

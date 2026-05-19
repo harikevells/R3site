@@ -30,14 +30,14 @@
     color: #FF0000;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: clamp(14px, 2vw, 38px);
+    font-size: clamp(14px, 5.4vw, 56px);
     letter-spacing: 2px;
     margin-bottom: 10px;
     display: block;
 }
 
 .latex-title {
-    font-size: clamp(32px, 5.5vw, 56px);
+    font-size: clamp(32px, 3.5vw, 46px);
     font-weight: 800;
     line-height: 1.1;
     color: #000000;
@@ -108,14 +108,14 @@
 .latex-badge {
     color: #FF0000;
     font-weight: 700;
-    font-size: clamp(12px, 1.4vw, 25px);
+    font-size: clamp(12px, 2.4vw, 28px);
     text-transform: uppercase;
     letter-spacing: 1px;
     white-space: nowrap;
 }
 
 .latex-subheading {
-    font-size: clamp(20px, 3vw, 26px);
+    font-size: clamp(20px, 2vw, 24px);
     font-weight: 800;
     color: #111827;
     margin-bottom: 25px;
@@ -286,4 +286,13 @@
         padding-left: 30px;
         text-align: justify;
     }
+    .latex-img {
+        height: 240px;
+    }
+        .latex-main-row {
+gap: 0px;
+        }
+        .latex-header {
+margin-bottom: 10px;
+        }
 }

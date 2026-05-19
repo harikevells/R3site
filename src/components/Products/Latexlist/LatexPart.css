@@ -32,16 +32,17 @@
 }
 
 .latex-card-badge {
-    display: inline-block;
-    padding: 4px 28px;
+    /* display: inline-block; */
+    padding: 0px 28px;
+    padding-bottom: 4px;
     background-color: #ffe6e6;
     border: 1px solid #ffb3b3;
     color: #cc0033;
     border-radius: 20px;
-    font-size: 24px;
+    font-size: 44px;
     font-weight: 700;
     text-transform: capitalize;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .latex-card-title {
@@ -49,6 +50,7 @@
     font-weight: 800;
     color: #1a1a1a;
     margin: 0;
+    margin-top: 10px;
 }
 
 /* White Content Box */
@@ -121,13 +123,13 @@
 .latex-banner-content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width:1800px;
     width: 100%;
     text-align: center;
 }
 
 .latex-banner-heading {
-    font-size: clamp(28px, 4.5vw, 48px);
+    font-size: clamp(28px, 4.5vw, 40px);
     font-weight: 800;
     color: #ffffff;
     text-transform: uppercase;
@@ -184,6 +186,6 @@
     }
     
     .latex-banner-content {
-        max-width: 1000px;
+        max-width: 1800px;
     }
 }
