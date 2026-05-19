@@ -1,17 +1,17 @@
 /* Global Reach Section Styles */
 .cp-container {
-    /* max-width: 1200px; */
+    /* max-width: 1200px; */  
     margin: 0 auto;
     padding: 0 45px;
 }
 
 .cp-global-section {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 .cp-section-title {
     font-size: 2.5rem;
-    font-weight: 800 !important;
+    font-weight: 800 !important;  
     text-align: center;
     font-family: 'Google Sans';
     margin-bottom: 60px;
@@ -44,7 +44,7 @@
 }
 
 .cp-global__map-image {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     opacity: 0;
 }

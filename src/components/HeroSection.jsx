@@ -40,7 +40,7 @@ const HeroSection = () => {
       <div className="hero-container" style={tiltStyle}>
         <div className="hero-content">
           <div className="hero-badge-reveal">
-            <span className="hero-tagline glass-effect">PROTECTION YOU CAN TRUST</span>
+            <span className="hero-tagline glass-effect text-capitalize">Trust Built on Integrity. Quality Beyond Expectation.</span>
           </div>
           
           <h1 className="hero-main-title 3d-text">
@@ -55,7 +55,7 @@ const HeroSection = () => {
           <div className="hero-divider"></div>
 
           <p className="hero-description">
-            R3 Med is a healthcare-focused organization that provides advanced medical, regenerative, and 
+            R3 Global is a healthcare-focused organization that provides advanced medical, regenerative, and 
             wellness services aimed at improving overall health, aesthetics, and patient outcomes.
           </p>
 

@@ -241,7 +241,7 @@
 
 /* Global Reach Section */
 .cp-global-section {
-    padding: 60px 0;
+    padding: 20px 0;
     /* background: #f9f9f9; */
 }
 
@@ -323,7 +323,7 @@
 }
 
 .cp-global__map-image {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     opacity: 0;
 }
