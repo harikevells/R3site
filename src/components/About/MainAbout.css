@@ -18,7 +18,7 @@
 .about-stats__inner {
   /* max-width: 1200px; */
   margin: 0 auto;
-  padding: 0 clamp(20px, 4vw, 80px);
+  padding: 0 clamp(20px, 8vw, 110px);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
@@ -59,11 +59,11 @@
   margin-bottom: 0;
 }
 
-.about-stats__divider {
+/* .about-stats__divider {
   width: 1px;
   height: 80%;
   background-color: var(--color-border);
-}
+} */
 
 .about-stats__right {
   display: flex;
@@ -79,12 +79,16 @@
 .about-stats__image-container {
   width: 100%;
   border-radius: 20px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
   overflow: hidden;
   /* box-shadow: 0 20px 40px rgba(0,0,0,0.1); */
 }
 
 .about-stats__right-img {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: block;
   transition: transform 0.5s ease;

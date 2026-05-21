@@ -32,9 +32,9 @@
   /* Matching the screenshot's cleaner rounded look */
   font-weight: 700;
   color: #000000;
-  font-size: clamp(36px, 5.5vw, 108px);
+  font-size: clamp(36px, 4.7vw, 73px);
   line-height: 1.1;
-  margin-top: -10%;
+  margin-top: -17%;
   margin-bottom: 30px;
   text-transform: none !important;
   letter-spacing: -0.02em;

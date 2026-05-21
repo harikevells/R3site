@@ -30,7 +30,7 @@ const About = () => {
         <div className="about-hero">
           <div className="about-hero-content">
             <h1 className="about-main-heading">
-              <span className="text-red">Exceptional Quality</span><br />Reliability<br />Integrity.<br /><span className="text-red">Trust.</span>
+              <span className="text-red">Exceptional Quality</span><br />Reliability<br />Integrity<br /><span className="text-red">Trust.</span>
             </h1>
 
             <p className="about-description">
